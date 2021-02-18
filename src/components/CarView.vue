@@ -36,6 +36,15 @@
     <section v-if="selectedCar">
       {{ selectedCar.name }}
       {{ selectedCar.label }}
+      <div>
+        <label for="show">
+          <input type="checkbox" id="show" v-model="showMore">
+          Show More
+        </label>
+        <div v-show="showMore">
+          {{ selectedCar.description }}
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -50,7 +59,8 @@ import { mapGetters, mapState } from 'vuex';
   },
   data() {
     return {
-      selectedCar: undefined
+      selectedCar: undefined,
+      showMore: false
     }
   },
   computed: {
