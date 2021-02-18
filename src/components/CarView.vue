@@ -33,7 +33,7 @@
         <div>{{car.price}}</div>
       </div>
     </div>
-    <section>
+    <section v-if="selectedCar">
       {{ selectedCar.name }}
       {{ selectedCar.label }}
     </section>
@@ -50,7 +50,7 @@ import { mapGetters, mapState } from 'vuex';
   },
   data() {
     return {
-      selectedCar: {}
+      selectedCar: undefined
     }
   },
   computed: {
