@@ -1,32 +1,66 @@
 <template>
-  <div class="hello">
+  <div class="car">
+    <div>filter</div>
+<!--    <div class="car-filter">-->
+<!--      <h1>Filter Model</h1>-->
+<!--      <h2>Vehicle type</h2>-->
+<!--      <div @click="handleFiler">-->
+<!--        <input type="checkbox" id="petrol" value="petrol" v-model="checkedFilters">-->
+<!--        <label for="petrol">Petrol</label>-->
+<!--      </div>-->
+<!--      <div @click="handleFiler">-->
+<!--        <input type="checkbox" id="natural-gas" value="natural-gas" v-model="checkedFilters">-->
+<!--        <label for="natural-gas">Natural Gas</label>-->
+<!--      </div>-->
+<!--      <div @click="handleFiler">-->
+<!--        <input type="checkbox" id="electric" value="electric" v-model="checkedFilters">-->
+<!--        <label for="electric">Eletric</label>-->
+<!--      </div>-->
+<!--      <span>Checked names: {{ checkedFilters }}</span>-->
+<!--    </div>-->
     <h1 v-if="cars.length == 0">
       Loading...
     </h1>
     <div v-else class="car-grid">
-      <div v-for="car in cars" :key="car.id" class="car-box">
+      <div v-for="car in cars" :key="car.id"
+           class="car-grid-box"
+           :class="{'car-grid-box__active': selectedCar === car}"
+           @click="selectedCar=car"
+      >
         <img :src="car.image" />
         <div>{{car.name}}</div>
         <div>{{car.label}}</div>
         <div>{{car.price}}</div>
       </div>
     </div>
+    <section>
+      {{ selectedCar.name }}
+      {{ selectedCar.label }}
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { mapState } from 'vuex';
-
+import { mapGetters, mapState } from 'vuex';
 
 @Component({
   props: {
     loading: String
   },
+  data() {
+    return {
+      selectedCar: {}
+    }
+  },
   computed: {
   ...mapState({
-      cars: 'cars'
-    })
+      cars: 'cars',
+      checkedFilters: 'checkedFilters'
+    }),
+    ...mapGetters([
+      'checkedFilters',
+    ])
   }
 })
 export default class HelloWorld extends Vue {
@@ -35,21 +69,36 @@ export default class HelloWorld extends Vue {
   mounted() {
     setTimeout(() =>   this.$store.commit('fetchCars'), 2000)
   }
+
+  handleFiler(event: MouseEvent) {
+    this.$store.commit('filterCars', event.target.value);
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+.car {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
+}
+
+.car-filter {
+  display: grid;
+  justify-content: flex-end;
+  justify-items: start;
+}
+
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.car-box {
+.car-grid-box {
   display: grid;
   border: 1px solid black;
   grid-template-columns: 1fr;
@@ -61,6 +110,16 @@ export default class HelloWorld extends Vue {
   img {
     width: 100%;
   }
+
+  &:hover {
+    background: blue;
+    color: white;
+  }
+}
+
+.car-grid-box__active {
+  background-color: blue;
+  color: white
 }
 
 h3 {
