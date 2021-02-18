@@ -7,7 +7,8 @@
       <div v-for="car in cars" :key="car.id" class="car-box">
         <img :src="car.image" />
         <div>{{car.name}}</div>
-        <div>{{car.year}}</div>
+        <div>{{car.label}}</div>
+        <div>{{car.price}}</div>
       </div>
     </div>
   </div>
@@ -56,6 +57,10 @@ export default class HelloWorld extends Vue {
   height: 200px;
   width: 200px;
   padding: 1rem;
+
+  img {
+    width: 100%;
+  }
 }
 
 h3 {
