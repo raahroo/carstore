@@ -5,21 +5,23 @@
     "label": "Entry-level battery with 45 kWh",
     "fuel": ["electric"],
     "color": "blue",
-    "image": "https://www.formacar.com/storage/images/8/33107/160e3e3fb0543251281acd4c40ffe0bc10.jpg",
+    "image": "https://media.volkswagen.com/vw-E11-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AVFyyJ1vTvsd2SlppEKhjTtKSK8CD01MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnwKyyJ8H3WDZ4HvCJii8vBOuoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hj9zzSAly3QGE0q2TBPP7m3sOXjO2mf2GKl0dfzMKV700bMNUPxYyP3dzLLylx1Wtx6188xOc3jjBwFGyyTodImmW%25HMppGQfLwwJUhV77l8S%25CCEN5VRRVZRGrrXodF66tmXlNN5pZEqq9o73AAZTBQSSi9qseefbrkoo2o1Q%25%25n%25eUDDuLpVaa0xAN11FssN88xeXdjjB3g%25yyTsG2mmWhvPppGk3HwwJzLw77l3wECCEVHnRRVYjNrrXmRj66tp0WNN5xwqqq9aefAAZCHzSSiLIseef2nYoo2iBQ%25%25ntSzDDuas6aa0AI211FxOT88xItPjjB7rcyyT%25wrmmWXXoppGr0YwwJzE377l56QCCEC5tRRVqnBrrX3Vd66tTHQNN5htGqq9MicAAZhoRSSiCSseefMSgoo2KSO%25%25nOdUDDuWu3&width=864",
     "brand": "Volkswagen",
     "description": "Combined fuel consumption Electricity 13.8 - 13.1 kWh / 100 km  1 • Combined CO₂ emissions Electricity 0 g / km  1 • Efficiency class A +  1",
     "price": 31495
   },
   {
     "itemId": 2,
-    "name": "The new ID.3 Pro",
-    "label": "Medium battery with 58 kWh",
-    "fuel": ["electric"],
-    "color": "blue",
-    "image": "https://www.electrive.com/wp-content/uploads/2020/02/volkswagen-id3-meb-2020-03-min.png",
+    "name": "The Touran",
+    "label": "Compact van for family and leisure",
+    "fuel": [
+      "petrol", "natural-gas", "diesel", "mild hybrid", "plug-in hybrid"
+    ],
+    "color": "white",
+    "image": "https://media.volkswagen.com/vw-5T1-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AVFyyJ1vTvsd2SlppEKhjTtKSK8Cjh1MM8H2Lvyr0Q%25UOVggAU5ENs8G5ikAjjUidHSPP7J8Kp8SuGuM2f99CvZ26JJbVeiiC5uwa8RR5S8t0CdwbpN7h88WU3oy3GeRBBKxAnW77Q2%25WWvge0JEIIrOJYUJ11llYbSgETqe7Lm6r00hzExu%254umzymq9S7FylZ9oh77d2rW0RnDeiFlffgSRQNDRbmUURUC244rje5gg6xILzzNd5Z33qTyvccAIkEhhShE4kkevvrHHo89vKK%25jEQMMD6%25Fvva3OxLL1ITTbb8d1FYYjNPtOOyHgOPPmQMlddp63lsswNORII7opVQQC2QOUUR36j44rTJqgg6Wd7zzNmcq33q3ERccADAuhhShMZkkekciHHoJOxKK%25aa2MMD13FvvacDhLL1XD0bb8Sh%25YYjDYNOOy2ABPPmMb0ddpyMdssw40jII7NwQQQCJw%25UURO%25L44rcIqgg6FH7zzNBAp33qxNeccAWNUhhSTX2kkeUwtHHo8P7KK%25g95MMD2ZFvvaODrLL1ZBLbb8SKTYYjfboOOy5qMPPmGKIddpvxDssw0mGII7IqvQQC%25kIUURkzN44rPFggg6d1GzzNkcI33qDVwccAQbEhhSstXkkekwWHHogcxKK%25zkHMMDa19vvaXxrLL1hfNbb87b%25YYjy9pOOyHYGPPmUzHddpfUKssw4eGII7bTIQQCu4XUURSSW44rTKbgg6kbCzzNGAI33qTEQccAce7hhSaMTkkeWAnHHoH1uKK%25EoFMMD5jFvvavkhLL1rLNbb8XiHYYjHspOOyK2oPPmonVddpfAWssw0fjII7nBXQQC2gOUURYGp44rOIGgg60j4zzN%25vW33qTzfccAwgShhSGY0kkeCJJHHojou&width=864",
     "brand": "Volkswagen",
-    "description": "Combined fuel consumption Electricity 13.8 - 13.1 kWh / 100 km  1 • Combined CO₂ emissions Electricity 0 g / km  1 • Efficiency class A +  1",
-    "price": 34995
+    "description": "The Touran inspires with its pronounced willingness to travel: with plenty of space, comfort and versatility.",
+    "price": 31840
   },
   {
     "itemId": 3,
@@ -46,5 +48,31 @@
     "brand": "Volkswagen",
     "description": "Natural gas H combined fuel consumption",
     "price": 15900
+  },
+  {
+    "itemId": 5,
+    "name": "The golf",
+    "label": "Digital benchmark in its class",
+    "fuel": [
+      "natural-gas"
+    ],
+    "color": "gray",
+    "image": "https://media.volkswagen.com/vw-CG5-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AVFyyJ1vTvsd2SlppEKhjTtKSK8CMH5MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOntZyyJ8H3WDZ4HvCJii8fRKuoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hT9zzSAly3QGE0q2TBPP7m3sOXjO2mf2GKl0dfzMKV700%25X8UPxYYN96ZLLylx1WtxA288xOcWjjB5PyyyTfVKmmWI1AppGDKvwwJU2b77l1RcCCEjeDRRVqqFrrXirJ66tTXdNN5pesqq9aajAAZCARSSiCZKeefRyMoo216z%25%25nTpzDDuWe3aa0Vns11Fb1T88x0a3jjBQgcyyTU%250mmW2wippGXjQwwJwrK77l7pbCCE4SuRRVxyGrrX5m966t3VYNN5ENxqq9MeBAAZ57ASSiDuueefEbuoo2YYC%25%25nQvzDDuqlXaa04Qc11FOBz88xzHBjjBOxGyyTskKmmW48kppGD3zwwJtQL77lKhbCCEcYCRRV4uHrrXOyq66tHVdNN5w6sqq9qupAAZT0iSSi8%25neefrM9oo26JN%25%25n8aqDDuDD4aa0A7s11FNXQ88x8tkjjBoapyyT%258PmmWGJkppGQt1wwJ7yD77lIY%25CCEZCWRRVXz5rrXyRZ66tT7wNN5Kx4qq9%251pAAZH%25RSSiDWseefrDkoo2vDg%25%25nlNzDDuWW6aa0d7611FpAy88xITojjBd4HyyTE7PmmWmEMppGRZEwwJUGb77l7yMCCEnC3RRVyh9rrXBkI66tc0FNN52wiqq9MhVAAZvfzSSik%25reefRP5oo2roQ%25%25nMVmDDuWwYaa0YDh11F9%25x88xPRNjjBQ4cyyTVTK&width=864",
+    "brand": "yellow",
+    "description": "The Golf is the vehicle that has shaped its own class for generations. The new Golf also sets a milestone for the next generation.",
+    "price": 20395
+  },
+  {
+    "itemId": 6,
+    "name": "Active",
+    "label": "The plus in dynamics in a small format",
+    "fuel": [
+      "natural-gas"
+    ],
+    "color": "red",
+    "image": "https://media.volkswagen.com/vw-AW1-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AVFyyJ1vTvsd2SlppEKhjTtKSK8CPk1MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnqSyyJ8H3WDZ4HvCJii8JrQ0oo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hK9zzSAly3QGE0q2TBPP7m3sOXjO2mf2GKl0dfzMKV700%25XlUPxYvP9xzLLylx1Wtx6P88xSDMjjBiEHyyTsaqmmW%25HMppGQfLwwJ1Ao77l66ECCE9H6RRVZzarrXBVP66tmSdNN5DIqqq9o5PAAZ79cSSiCjheefargoo2BAg%25%25nlfzDDuvDAaa0dAf11FxSh88xJDsjjBWa4yyTy7KmmWmjMppGINfwwJu1477l5bTCCEgg1RRVtyLrrXmVp66tloeNN5hBMqq9MTfAAZC6bSSi9CGeefaxJoo21Y9%25%25nOOsDDuWsDaa0AEF11FYw288xPIWjjBdWfyyTcMOmmWdTMppGgiuwwJtAb77l1hcCCEMkYRRVhORrrXkRt66tzFwNN5dpSqq97bCAAZv5QSSiRAUeefexCoo2Jme%25%25nm1FDDuqb8aa0Vbs11FSXT88xpyojjBEgUyyT%2564mmWedAppGpfswwJ1y277l8pTCCEVXhRRVliOrrX3fP66tcd5NN5wvTqq9uqVAAZiH2SSiCAueefENuoo2YJh%25%25njprDDubjAaa0yVg11FSU288xllUjjBQrAyyTUd9mmWRS3ppGglEwwJUc877l7VFCCE9NURRV4lOrrXrZP66tcXsNN5xNzqq9cMpAAZCvlSSilLzeefMWIoo25r0%25%25nLdmDDuts4aa0LjS11FAU288xZSnjjBea4yyTV6QmmW28GppGg3v&width=864",
+    "brand": "Volkswagen",
+    "description": "Whether on long journeys or short jaunts: the Polo ACTIVE offers design, innovation and driving fun for everyone.",
+    "price": 19750
   }
 ]

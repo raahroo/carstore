@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import set = Reflect.set;
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const CarsData = require("../../../car-store/src/store/cars.json");
 
@@ -7,25 +8,37 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cars: [],
-    checkedFilters: []
+    cars: [{ itemId: "", fuel: "" }],
+    filters: ["all"],
+    activeCars: [{ itemId: "", fuel: "" }]
   },
   getters: {
-    checkedFilters: (state) => (filter: (this: void, value: never, index: number, obj: never[]) => value is never) => {
-      if(state.checkedFilters.find(filter)) {
-        return state.checkedFilters.filter( stateFilter => stateFilter !== filter )
-      } else {
-        return [...state.checkedFilters, filter];
-      }
-    }
+    //make easier to pull pieces of data
+    getElectricCars: state =>
+      state.activeCars.filter(car => car.fuel.includes("electric"))
   },
   mutations: {
-    fetchCars(state) {
-      state.cars = CarsData
+    resetCars(state) {
+      state.activeCars = state.cars;
     },
-    filterCars(state: any, fuel) {
-      console.log(fuel, 'fuel')
-      state.cars = (state: any )=> state.cars.filter((car: any) => car.fuel.contains(fuel))
+    setCars(state, payload) {
+      state.cars = payload; // look after in a real case scenario
+    },
+    setActiveCars(state, payload) {
+      state.activeCars = payload; // look after in a real case scenario
+    },
+    setActiveGreenCars(state) {
+      state.activeCars = state.cars.filter(car =>
+        car.fuel.includes("electric")
+      );
+    }
+  },
+  actions: {
+    getCars: context => {
+      setTimeout(() => {
+        context.commit("setCars", CarsData);
+        context.commit("setActiveCars", CarsData);
+      }, 2000);
     }
   },
   modules: {}
