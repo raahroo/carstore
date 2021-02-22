@@ -22,10 +22,10 @@ export default new Vuex.Store({
       state.activeCars = state.cars;
     },
     setCars(state, payload) {
-      state.cars = payload; // look after in a real case scenario
+      state.cars = payload;
     },
     setActiveCars(state, payload) {
-      state.activeCars = payload; // look after in a real case scenario
+      state.activeCars = payload;
     },
     setActiveGreenCars(state) {
       state.activeCars = state.cars.filter(car =>
